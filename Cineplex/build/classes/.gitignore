@@ -1,0 +1,10 @@
+/action/
+/applicationContext.xml
+/dao/
+/filter/
+/hibernate3/
+/model/
+/service/
+/struts.xml
+/tag/
+/vo/
