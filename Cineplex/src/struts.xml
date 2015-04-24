@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 指定Struts 2配置文件的DTD信息 -->
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<!-- Struts 2配置文件的根元素 -->
+<struts>
+	<!-- 配置了系列常量 -->
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<constant name="struts.devMode" value="true" />
+	<package name="process" extends="struts-default">
+		<!-- 定义处理用户请求的Action，指定该Action的实现类 -->
+
+		<action name="loginPro" class="action.LoginAction">
+			<result name="success">/jsp/login.jsp</result>
+		</action>
+		<action name="registerPro" class="action.RegisterAction">
+			<result name="error">/jsp/login.jsp?registerError=1</result>
+			<result name="success">/jsp/login.jsp?success=1</result>
+			<result name="password_disagree">/jsp/login.jsp?pwdError=1</result>
+			<result name="account_exist">/jsp/login.jsp?accountExist=1</result>
+			<result name="account_error">/jsp/login.jsp?accountError=1</result>
+		</action>
+		<action name="logoutPro"
+			class="action.LogoutAction">
+			<result name="success">/jsp/login.jsp</result>
+		</action>
+
+        <!-- Member -->
+		<action name="allMoviesPro" class="action.AllMoviesAction">
+			<result name="success">/jsp/ticket.jsp</result>
+		</action>
+
+		<action name="oneMoviePro" class="action.OneMovieAction">
+			<result name="success">/jsp/movie.jsp</result>
+		</action>
+
+		<action name="activityArrangePro" class="action.ActivityArrangeAction">
+			<result name="success">/jsp/activity.jsp</result>
+		</action>
+		<action name="recordPro" class="action.RecordAction">
+			<result name="success">/jsp/record.jsp</result>
+		</action>
+		<action name="infoPro" class="action.InfoAction">
+			<result name="success">/jsp/info.jsp</result>
+		</action>
+		<action name="ticketBookPro" class="action.TicketBookAction">
+			<result name="success"></result>
+		</action>
+		<action name="answerQuestionPro" class="action.AnswerQuestionAction">
+			<result name="success">/jsp/activity.jsp</result>
+		</action>
+		<action name="modifyInfoPro" class="action.ModifyInfoAction">
+			<result name="success"></result>
+		</action>
+		<action name="chargePro" class="action.ChargeAction">
+			<result name="success"></result>
+		</action>
+		<action name="cancelMemberPro" class="action.CancelMemberAction">
+			<result name="success">/jsp/info.jsp</result>
+		</action>
+        <action name="creditExchangePro" class="action.CreditExchangeAction">
+			<result name="success">/jsp/info.jsp</result>
+		</action>
+		
+		<!-- Manager -->
+		<action name="memberAgeStaticsPro"
+			class="action.MAgeStatisticsAction">
+			<result name="success">/jsp/mdata.jsp</result>
+		</action>
+		<action name="memberGenderStaticsPro"
+			class="action.MGenderStatisticsAction">
+			<result name="success">/jsp/mdata.jsp</result>
+		</action>
+		<action name="memberAddressStaticsPro"
+			class="action.MAddressStatisticsAction">
+			<result name="success">/jsp/mdata.jsp</result>
+		</action>
+		<action name="memberActivityCreditStaticsPro"
+			class="action.MActivityCreditStatisticsAction">
+			<result name="success">/jsp/mdata.jsp</result>
+		</action>
+		<action name="memberConsumptionStaticsPro"
+			class="action.MConsumptionStatisticsAction">
+			<result name="success">/jsp/mdata.jsp</result>
+		</action>
+		<action name="memberCardStaticsPro"
+			class="action.MCardStatisticsAction">
+			<result name="success">/jsp/mdata.jsp</result>
+		</action>
+		<action name="cineplexDayNumStaticsPro"
+			class="action.CDayNumStatisticsAction">
+			<result name="success">/jsp/cdata.jsp</result>
+		</action>
+		<action name="cineplexMonthNumStaticsPro"
+			class="action.CMonthNumStatisticsAction">
+			<result name="success">/jsp/cdata.jsp</result>
+		</action>
+		<action name="cineplexHallStaticsPro"
+			class="action.CHallStatisticsAction">
+			<result name="success">/jsp/cdata.jsp</result>
+		</action>
+		<action name="cineplexCardCashStaticsPro"
+			class="action.CCardCashStatisticsAction">
+			<result name="success">/jsp/cdata.jsp</result>
+		</action>
+		<action name="cineplexSeatRateStaticsPro"
+			class="action.CSeatRateStatisticsAction">
+			<result name="success">/jsp/cdata.jsp</result>
+		</action>
+		<action name="allPlansPro" class="action.AllPlansAction">
+			<result name="success">/jsp/plan.jsp</result>
+		</action>
+		<action name="onePlanPro" class="action.OnePlanAction">
+			<result name="success">/jsp/onePlan.jsp</result>
+		</action>
+		<action name="passPro" class="action.PassAction">
+			<result name="success"></result>
+		</action>
+		<action name="allOfflineMoviesPro" class="action.AllMoviesAction">
+			<result name="success">/jsp/offline.jsp</result>
+		</action>
+		<action name="offlinePro" class="action.OfflineAction">
+			<result name="success">/jsp/offline.jsp</result>
+		</action>
+		
+		<!-- Waiter -->
+		<action name="allBookMoviesPro" class="action.AllMoviesAction">
+			<result name="success">/jsp/sale.jsp</result>
+		</action>
+		<action name="makePlanPro" class="action.MakePlanAction">
+			<result name="success">/jsp/mplan.jsp?modify=1</result>
+		</action>
+		<action name="oneModifyPlanPro" class="action.MakePlanSearchAction">
+			<result name="success">/jsp/mplan.jsp?modify=2</result>
+		</action>
+		<action name="modifyPlanPro" class="action.ModifyPlanAction">
+			<result name="success">/jsp/mplan.jsp?modify=1</result>
+		</action>
+		<action name="activityQuestionPro" class="action.ActivityQuestionAction">
+			<result name="success">/jsp/activityques.jsp</result>
+		</action>
+		<action name="salePro" class="action.SaleAction">
+			<result name="success">/jsp/sale.jsp</result>
+		</action>
+		<action name="queryPro" class="action.QueryAction">
+			<result name="success">/jsp/query.jsp</result>
+		</action>
+		<action name="quesPro" class="action.AllMoviesAction">
+			<result name="success">/jsp/activityques.jsp</result>
+		</action>
+        
+		<!-- 让用户直接访问该应用时列出所有视图页面 -->
+		<action name="*">
+			<result>/{1}.jsp</result>
+		</action>
+	</package>
+</struts>
