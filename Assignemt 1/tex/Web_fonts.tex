@@ -36,7 +36,7 @@
 \renewcommand{\abstractname}{摘要}
 
 \begin{abstract}
-  摘要填充。摘要填充。摘要填充。摘要填充。摘要填充。摘要填充。摘要填充。摘要填充。摘要填充。摘要填充。
+  本文对Web应用中的流行字体，计算机屏幕对字体的展示技术进行分析，并基于此提出了对Web应用中字体选择的建议。
 
   \textbf{关键字：}英文字体、Web应用、分辨率
 \end{abstract}
@@ -45,20 +45,24 @@
 
 \subsection{总体概况}
 
-~~~~~~1999年01月15日，Microsoft发布“TrueType core fonts for the Web”,首次提出其与Apple Inc共同研制的29种Web字型标准及其扩展版本，字型标准如Figure \ref{cyt1}所示\cite{cyt1}。
+~~~~~~1999年01月15日，Microsoft发布“TrueType core fonts for the Web”,首次提出其与Apple Inc共同研制的29种Web字型标准及其扩展版本，字型标准如Figure \ref{cyt1}~所示\cite{cyt1}。
 
-归结而言，包括：Andale Mono、Arial 、Arial Black 、Comic Sans MS、 Courier New、  Georgia、Impact、Times New Roman、Trebuchet MS、Verdana及Webdings共11类\cite{nutshell}，如Figure \ref{cyt2}所示。。
+归结而言，包括：Andale Mono, Arial , Arial Black, Comic Sans MS,  Courier New, Georgia, Impact, Times New Roman, Trebuchet MS, Verdana及Webdings共11类\cite{nutshell}，如Figure \ref{cyt2}~所示。
+
+~~
 
 \makeatletter
 \def\@captype{figure}
 \makeatother
 \centerline{\includegraphics [width=0.8\textwidth]{cyt2.png} }
-\caption{TrueType字型标准}
+\caption{11类字体样例}
 \label{cyt2}
 
 当然，目前随着互联网技术的飞速发展，已有数百种Web开发字体可供选择\cite{cyt2}。相应字体的分类标准也各有不同。使用最广，对字体进行系统的分类是1954年由Maxmilien Vox制定，由Association Typographique Internationale（国际字体协会）于1962年修订的Vox-AtypI分类，将字体分为11大类\cite{cyt4}，当然，这11类与TrueType归纳的11类不同。另外，法国字体艺术家Francis Thibaudeau将字体分为四大类，Antiques（sans-serif无衬线），Egyptiennes（slab-serif扁平衬线），Didots，Elzevirs（triangular serifs三角形衬线），这也是Vox分类的基础。
 
 由于Microsoft和Apple Inc自1999年起，将其11类字型标准分别安装到Internet Explorer和Safari中，作为默认的浏览器字体为大众熟知，因而Web程序员开发大多选择这11类字体，逐渐成为当前Web主流字体。
+
+~~
 
 \makeatletter
 \def\@captype{figure}
@@ -72,7 +76,7 @@
 以下是对Web主流字体的分析。
 
 	\subsubsection{Andale Mono} 	
-~~~~~~	Internet Explorer 4.0的主流字体，现由Lucida Console替代。Arial
+~~~~~~	Internet Explorer 4.0的主流字体，现由Lucida Console替代。
 
 	\subsubsection{Arial} 
 	
@@ -80,13 +84,13 @@
 	
 苹果系统没有Arial这种字体，但其对应有Helvetica字体，它是MAC机上与Arial 字体最相似的WEB字体,是一种非衬线字体\cite{cyt6}。
 	
-这也是Linux和Unix下的Web常用字体
+这也是Linux和Unix下的Web常用字体。
 	\subsubsection{Comic Sans MS} 
 	
-~~~~~~   类似手写，常用于纸本漫画及线上漫画（WebComic）以取代手写，风格类似于卡通式卖萌字体，但字体处理细节在“笔画均匀度”、“字间距”、“反锯齿”上处理不当。如\cite{cyt3}中作者David Kadavy所言，该字体并不适用于任何情况，只适合儿童使用。
+~~~~~~   类似手写，常用于纸本漫画及线上漫画（WebComic）以取代手写，风格类似于卡通式卖萌字体，但字体处理细节在“笔画均匀度”、“字间距”、“反锯齿”上处理不当\cite{cyt3}。正如该字体的作者David Kadavy所言，其并不适用于任何情况，只适合儿童使用。
 	\subsubsection{Courier New} 
 	
-~~~~~~    Courier是等宽的粗衬线字体，因其等宽特性可以轻易对齐字段的左右边界，成为脚本和程序设计中源代码的常用字体[9]，Courier New是Courier的变体，相对于Courier行距更宽。
+~~~~~~    Courier是等宽的粗衬线字体，因其等宽特性可以轻易对齐字段的左右边界，成为脚本和程序设计中源代码的常用字体，Courier New是Courier的变体，相对于Courier行距更宽。
 	\subsubsection{Georgia} 
 	
 ~~~~~~Georgia是一种衬线字体，具有小字下仍能清新辨识的特性，可读性很好。表面上，Georgia与Times New Roman相当类似，实质有很多不同。首先，在相同的字号下，Georgia的字元比Times New Roman的字元略大；其次，Georgia的字元线条较粗，衬线部分也比较钝而平。另外在数字部分也非常不同，Georgia采用称为“不齐线数字”的数字，特色在于数字会像西文字母般有高矮大小之别。
@@ -106,14 +110,14 @@
 	\subsubsection{Verdana} 
 	
 ~~~~~~Verdana，无衬线字体，由于它在小字上仍有结构清晰端整、阅读辨识容易等高品质的表现，因而在1996年推出后即迅速成为许多领域所爱用的标准字型之一。
-	\subsubsection{Verdana} 
+	\subsubsection{Webdings} 
 	
-~~~~~~Verdana，无衬线字体，由于它在小字上仍有结构清晰端整、阅读辨识容易等高品质的表现，因而在1996年推出后即迅速成为许多领域所爱用的标准字型之一。
+~~~~~~Webdings是一个TrueType的dingbat字体，于1997年发表，搭载在其后的Microsoft Windows视窗系统内。在Unicode 7.0发布之前，大多的字形都没有Unicode的相对字。另外，由于firefox并不支持Webdings，兼容性需要提升。
     
 
 \subsection{Web字体的基本特性}
 
-在CSS中，Web字体相关的属性如Table \ref{tb1}所示
+在CSS中，Web字体相关的属性如Table \ref{tb1}所示：
 
 \begin{table}[h]
 \centering
@@ -130,12 +134,12 @@ letter-spacing & word-spacing & white-space & direction\\ \hline
 
 \subsection{字体风格及使用场合}
 从字体风格角度，字体主要包括Academic Categories及Popular Style \& Tags。如Figure \ref{cyt3}
-所示
+所示：
 
 \makeatletter
 \def\@captype{figure}
 \makeatother
-\centerline{\includegraphics [width=1\textwidth]{cyt3.png} }
+\centerline{\includegraphics [width=1.2\textwidth]{cyt3.png} }
 \caption{TrueType字型标准}
 \label{cyt3}
 
@@ -146,7 +150,7 @@ letter-spacing & word-spacing & white-space & direction\\ \hline
 
 ~~~~~~pt全称为point，即“磅”，是印刷行业的常用单位；px全称为pixel，即“像素”，是屏幕显示的基本单位。像素本身并没有确切的大小，而磅则是一个固定的长度单位，大小为1/72英寸。
 
-\subsubsection{字体微调（font hinting）}
+\subsubsection{字体微调（Font hinting）}
 ~~~~~~字体微调技术多见于TureType字体\cite{mxw1}，是精确地定义字体所要显示的像素是一种方法，用以尽可能在小尺寸、低分辨率的情况下创建最好的字符位图形状。
 
 TrueType字体使用矢量图形描述字符的轮廓，并在显示时在轮廓内进行填充，而字符在屏幕上实际显示时，又需要转化为一组像素点。在转化的过程中，矢量的轮廓往往无法紧密贴合像素点的边缘（见Figure \ref{mxw1}）。此时若简单地对未被完全包括在轮廓内的像素进行二值化处理，显示效果将会与字体设计时的预期产生出入。在小字号中，这样的出入产生的出入将更为明显，并可能导致字符在屏幕上产生笔划粘连、残缺等问题（见Figure \ref{mxw2}）。使用点阵字体是解决这一问题的最佳方案，因为点阵字体精确地控制了每一个像素的明暗，可以达到最佳的显示效果。然而，点阵字体通常为某一特定字号设计，不能将字号放大成为了其最大问题。在这样的背景下，字体的Hinting技术应运而生。Hinting的基本原理是在矢量字体中嵌入一些小字号的点阵字体，在字号较小时，直接将点阵结果显示在屏幕上；使用大字号时，再通过矢量图形进行渲染。Hinting技术有效地将点阵字体与矢量字体的优势融合起来，使得TrueType字体无论字号大小如何变化，都能在屏幕上清晰地显示出来。
@@ -196,14 +200,15 @@ TrueType字体使用矢量图形描述字符的轮廓，并在显示时在轮廓
 \end{table}
 
 \subsection{高DPI下的屏幕文字可读性改进技术}
-~~~~~~文字的可读性最终体现在阅读给人眼带来的疲劳感上。无论应用怎样的可读性改进技术，只要能有效地降低人阅读屏幕显示文本的疲劳感，延长用户从开始阅读到被迫离开设备休息的时间，就都是成功的。应用这些可读性改进技术后，网页设计就获得了更大的自由度。在低分辨率、低DPI时代，为了保证文字的可读性，网页设计者往往倾向于使用一些较粗的字体，但从以目前的分辨率，在一般的DPI下，使用比以往更细的字体仍然能实现同样清晰、优雅的文字显示效果。
+~~~~~~文字的可读性最终体现在阅读给人眼带来的疲劳感上。无论应用怎样的可读性改进技术，只要能有效地降低人阅读屏幕显示文本的疲劳感，延长用户从开始阅读到被迫离开设备休息的时间，就都是成功的。应用这些可读性改进技术后，网页设计就获得了更大的自由度。在低分辨率、低DPI时代，为了保证文字的可读性，网页设计者往往倾向于使用一些较粗的字体，但在目前的分辨率，在一般的DPI下，使用比以往更细的字体仍然能实现同样清晰、优雅的文字显示效果。
 
 \textbf{\large Font Hinting}:不可否认，字体微调技术在低分辨率、小尺寸屏幕的时代非常有效。然而，随着分辨率和DPI数值的提升，TrueType字体的Hinting技术虽然仍有效果，但效果已不十分明显。一方面，高分辨率和高DPI使得显示同样实际大小的字符时，可以进行渲染的像素数目大幅增加，不使用Hinting已经可以达到良好的显示效果；另一方面，由于目前并没有有效的自动化Hinting工具，字符的微调需要设计师的人工控制。有数据显示，即使只对256个ASCII字符进行二值化微调，一名有经验的设计师也需要工作80小时\cite{mxw3}。因此，Hinting技术在高DPI时代已然成为鸡肋，吃力不讨好，只有在与其它显示技术结合的情况下，Hinting才能重新发挥其应有的作用。
 
-\textbf{\large ClearType\&DirectWrite}: ~ClearType技术是针对LCD显示设备开发的平滑显示技术。与CRT显示器不同，LCD显示设备中的一个像素可以被分解为3个次像素，分别显示红、绿、蓝三种颜色。基于人眼的视觉系统对颜色的细节错误不敏感，而对亮度的细节错误更敏感的事实，ClearType技术在字符边缘使用一些彩色像素点来增强显示效果\cite{mxw4}。（ClearType技术的简单实现机制见Figure \ref{mxw3}。
+\textbf{\large ClearType\&DirectWrite}: ~ClearType技术是针对LCD显示设备开发的平滑显示技术。与CRT显示器不同，LCD显示设备中的一个像素可以被分解为3个次像素，分别显示红、绿、蓝三种颜色。基于人眼的视觉系统对颜色的细节错误不敏感，而对亮度的细节错误更敏感的事实，ClearType技术在字符边缘使用一些彩色像素点来增强显示效果\cite{mxw4}。（ClearType技术的简单实现机制见Figure \ref{mxw3}~）。
 
 DirectWrite技术与ClearType类似，不同之处在于，ClearType技术只在水平方向平滑的字符边缘的显示效果，而DirectWrite技术在水平和垂直两个方向都能使字符的显示更加平滑。
-需要说明的是，ClearType与DIrectWrite技术只对拥有Hinting信息的字体产生效果。
+
+需要说明的是，ClearType与DirectWrite技术只对拥有Hinting信息的字体产生效果。
 
 ~~
 
@@ -326,7 +331,7 @@ DirectWrite技术与ClearType类似，不同之处在于，ClearType技术只在
 \end{itemize}
 \subsubsection{基于不同信息层次的字体对比处理}
 
-~~~~~~对于不同的信息层次采用不同的字体，有两种思路一是使用尺寸、颜色、粗细和形状产生对比，如Figure \ref{Jing_fig5}~二是对特定的数据元素使用差异化字体，如\ref{Jing_fig6}。
+~~~~~~对于不同的信息层次采用不同的字体，有两种思路一是使用尺寸、颜色、粗细和形状产生对比，如Figure \ref{Jing_fig5}~二是对特定的数据元素使用差异化字体，如Figure \ref{Jing_fig6}。
 
 \makeatletter
 \def\@captype{figure}
