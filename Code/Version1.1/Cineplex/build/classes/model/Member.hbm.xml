@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.Member" table="member">
+		<id name="id" type="int">
+			<column name="id" />
+			<generator class="assigned" />
+		</id>
+		<property name="account" type="java.lang.String">
+			<column name="account" />
+		</property>
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="password" />
+		</property>
+		<property name="credit" type="int">
+			<column name="credit" />
+		</property>
+		<property name="address" type="java.lang.String">
+			<column name="address" />
+		</property>
+		<property name="gender" type="java.lang.String">
+			<column name="gender" />
+		</property>
+		<property name="birthday" type="java.lang.String">
+			<column name="birthday" />
+		</property>
+		<property name="icon" type="java.lang.String">
+			<column name="icon" />
+		</property>
+		<property name="membercard_number" type="int">
+			<column name="membercard_number" />
+		</property>
+		<property name="state" type="boolean">
+			<column name="state" />
+		</property>
+		<property name="balance" type="int">
+			<column name="balance" />
+		</property>
+		<property name="level" type="int">
+			<column name="level" />
+		</property>
+		<property name="register_time" type="java.lang.String">
+			<column name="register_time" />
+		</property>
+		<property name="member_state" type="java.lang.String">
+			<column name="member_state" />
+		</property>
+	</class>
+</hibernate-mapping>
