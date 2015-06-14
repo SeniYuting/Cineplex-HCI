@@ -89,31 +89,30 @@
 					Member member = (Member) request.getAttribute("member");
 						if (request.getParameter("modify").equals("1")) {
 				%>
-				<form action="infoPro?modify=2" autocomplete="on"
-					method="post">
+				<form action="infoPro?modify=2" autocomplete="on" method="post">
 					<div class="grid_8">
 						<div class="pad-1">
 							<h2>Register Info</h2>
 							<div id="form5">
 								<fieldset>
-									<label><span class="text-form"><strong>Name</strong></span><input
+									<label><span class="text-form1"><strong>Name</strong></span><input
 										type="text" value="<%=member.getName()%>" readonly="readonly"></label>
-									<label><span class="text-form"><strong>Account</strong></span><input
+									<label><span class="text-form1"><strong>Account</strong></span><input
 										type="text" value="<%=member.getAccount()%>"
 										readonly="readonly"></label> <label><span
-										class="text-form"><strong>Password</strong></span><input
+										class="text-form1"><strong>Password</strong></span><input
 										type="password" value="<%=member.getPassword()%>"
 										readonly="readonly"> </label> <label><span
-										class="text-form"><strong>Credit</strong></span><input
+										class="text-form1"><strong>Credit</strong></span><input
 										type="text" value="<%=member.getCredit()%>"
 										readonly="readonly"></label> <label><span
-										class="text-form"><strong>Address</strong></span><input
+										class="text-form1"><strong>Address</strong></span><input
 										type="text" value="<%=member.getAddress()%>"
 										readonly="readonly"></label> <label><span
-										class="text-form"><strong>Gender</strong></span><input
+										class="text-form1"><strong>Gender</strong></span><input
 										type="text" value="<%=member.getGender()%>"
 										readonly="readonly"></label> <label><span
-										class="text-form"><strong>Birthday</strong></span><input
+										class="text-form1"><strong>Birthday</strong></span><input
 										type="text" value="<%=member.getBirthday()%>"
 										readonly="readonly"></label>
 								</fieldset>
@@ -140,25 +139,23 @@
 					</div>
 				</form>
 
-				<form action="charge.jsp" autocomplete="on"
-					method="post">
+				<form action="charge.jsp" autocomplete="on" method="post">
 					<div class="grid_8 top-padding">
 						<div class="pad-1">
 							<h2>Member Info</h2>
 							<div id="form5">
 								<fieldset>
-									<label><span class="text-form"><strong>Card
-												Num</strong></span><input type="text"
+									<label><span class="text-form1"><strong>CardNum</strong></span><input type="text"
 										value="<%=member.getMembercard_number()%>" readonly="readonly"></label>
-									<label><span class="text-form"><strong>Balance</strong></span><input
+									<label><span class="text-form1"><strong>Balance</strong></span><input
 										type="text" value="$ <%=member.getBalance()%>"
 										readonly="readonly"></label> <label><span
-										class="text-form"><strong>Valid</strong></span><input
-										type="text" value="<%=member.getState()%>" readonly="readonly"></label>
-									<label><span class="text-form"><strong>RegisterTime</strong></span><input
+										class="text-form1"><strong>CardState</strong></span><input
+										type="text" value="<%if(member.getState()){%>Valid<%}else{ %>Invalid<%} %>" readonly="readonly"></label>
+									<label><span class="text-form1"><strong>RegisterTime</strong></span><input
 										type="text" value="<%=member.getRegister_time()%>"
 										readonly="readonly"></label> <label><span
-										class="text-form"><strong>MemberState</strong></span><input
+										class="text-form1"><strong>MemberState</strong></span><input
 										type="text" value="<%=member.getMember_state()%>"
 										readonly="readonly"></label>
 								</fieldset>
@@ -207,53 +204,117 @@
 							<h2>Register Info -> Modify</h2>
 							<div id="form">
 								<fieldset>
-									<label><span class="text-form"><strong>Name</strong></span><input
+									<label><span class="text-form1"><strong>Name</strong></span><input
 										type="text" value="<%=member.getName()%>" name="uname"></label>
-									<label><span class="text-form"><strong>Password</strong></span><input
+									<label><span class="text-form1"><strong>Password</strong></span><input
 										type="password" value="" name="password1"> </label> <label><span
-										class="text-form"><strong>Pwd Again</strong></span><input
+										class="text-form1"><strong>Pwd Again</strong></span><input
 										type="password" value="" name="password2"></label> <label><span
-										class="text-form"><strong>Address</strong></span>									
-										
-									    <select name="address" id="select2">									
-									        <option value="Anhui" <% if(member.getAddress().equals("Anhui")){%> selected <%} %>>Anhui</option>
-									        <option value="Aomen" <% if(member.getAddress().equals("Aomen")){%> selected <%} %>>Aomen</option>
-									        <option value="Beijing" <% if(member.getAddress().equals("Beijing")){%> selected <%} %>>Beijing</option>
-									        <option value="Chongqing" <% if(member.getAddress().equals("Chongqing")){%> selected <%} %>>Chongqing</option>
-									        <option value="Fujian" <% if(member.getAddress().equals("Fujian")){%> selected <%} %>>Fujian</option>
-									        <option value="Gansu" <% if(member.getAddress().equals("Gansu")){%> selected <%} %>>Gansu</option>
-									        <option value="Guangdong" <% if(member.getAddress().equals("Guangdong")){%> selected <%} %>>Guangdong</option>
-									        <option value="Guangxi" <% if(member.getAddress().equals("Guangxi")){%> selected <%} %>>Guangxi</option>
-									        <option value="Guizhou" <% if(member.getAddress().equals("Guizhou")){%> selected <%} %>>Guizhou</option>
-									        <option value="Hainan" <% if(member.getAddress().equals("Hainan")){%> selected <%} %>>Hainan</option>
-									        <option value="Hebei" <% if(member.getAddress().equals("Hebei")){%> selected <%} %>>Hebei</option>
-									        <option value="Henan" <% if(member.getAddress().equals("Henan")){%> selected <%} %>>Henan</option>
-									        <option value="Heilongjiang" <% if(member.getAddress().equals("Heilongjiang")){%> selected <%} %>>Heilongjiang</option>
-									        <option value="Hubei" <% if(member.getAddress().equals("Hubei")){%> selected <%} %>>Hubei</option>
-									        <option value="Hunan" <% if(member.getAddress().equals("Hunan")){%> selected <%} %>>Hunan</option>
-									        <option value="Jilin" <% if(member.getAddress().equals("Jilin")){%> selected <%} %>>Jilin</option>
-									        <option value="Jiangsu" <% if(member.getAddress().equals("Jiangsu")){%> selected <%} %>>Jiangsu</option>
-									        <option value="Jiangxi" <% if(member.getAddress().equals("Jiangxi")){%> selected <%} %>>Jiangxi</option>
-									        <option value="Liaoning" <% if(member.getAddress().equals("Liaoning")){%> selected <%} %>>Liaoning</option>
-									        <option value="Neimenggu" <% if(member.getAddress().equals("Neimenggu")){%> selected <%} %>>Neimenggu</option>
-									        <option value="Ningxia" <% if(member.getAddress().equals("Ningxia")){%> selected <%} %>>Ningxia</option>
-									        <option value="Qinghai" <% if(member.getAddress().equals("Qinghai")){%> selected <%} %>>Qinghai</option>
-									        <option value="Shandong" <% if(member.getAddress().equals("Shandong")){%> selected <%} %>>Shandong</option>
-									        <option value="Shan(-)xi" <% if(member.getAddress().equals("Shan(-)xi")){%> selected <%} %>>Shan(-)xi</option>
-									        <option value="Shan(√)xi" <% if(member.getAddress().equals("Shan(√)xi")){%> selected <%} %>>Shan(√)xi</option>
-									        <option value="Shanghai" <% if(member.getAddress().equals("Shanghai")){%> selected <%} %>>Shanghai</option>
-									        <option value="Sichuan" <% if(member.getAddress().equals("Sichuan")){%> selected <%} %>>Sichuan</option>
-									        <option value="Taiwan" <% if(member.getAddress().equals("Taiwan")){%> selected <%} %>>Taiwan</option>
-									        <option value="Tianjin" <% if(member.getAddress().equals("Tianjin")){%> selected <%} %>>Tianjin</option>
-									        <option value="Xizang" <% if(member.getAddress().equals("Xizang")){%> selected <%} %>>Xizang</option>
-									        <option value="Xianggang" <% if(member.getAddress().equals("Xianggang")){%> selected <%} %>>Xianggang</option>
-									        <option value="Xinjiang" <% if(member.getAddress().equals("Xinjiang")){%> selected <%} %>>Xinjiang</option>
-									        <option value="Yunnan" <% if(member.getAddress().equals("Yunnan")){%> selected <%} %>>Yunnan</option>
-									        <option value="Zhejiang" <% if(member.getAddress().equals("Zhejiang")){%> selected <%} %>>Zhejiang</option>
-									</select>
-						
-										</label>
-									<label><span class="text-form"><strong>Birthday</strong></span><input
+										class="text-form1"><strong>Address</strong></span> <select
+										name="address" id="select2">
+											<option value="Anhui"
+												<%if (member.getAddress().equals("Anhui")) {%> selected
+												<%}%>>Anhui</option>
+											<option value="Aomen"
+												<%if (member.getAddress().equals("Aomen")) {%> selected
+												<%}%>>Aomen</option>
+											<option value="Beijing"
+												<%if (member.getAddress().equals("Beijing")) {%> selected
+												<%}%>>Beijing</option>
+											<option value="Chongqing"
+												<%if (member.getAddress().equals("Chongqing")) {%> selected
+												<%}%>>Chongqing</option>
+											<option value="Fujian"
+												<%if (member.getAddress().equals("Fujian")) {%> selected
+												<%}%>>Fujian</option>
+											<option value="Gansu"
+												<%if (member.getAddress().equals("Gansu")) {%> selected
+												<%}%>>Gansu</option>
+											<option value="Guangdong"
+												<%if (member.getAddress().equals("Guangdong")) {%> selected
+												<%}%>>Guangdong</option>
+											<option value="Guangxi"
+												<%if (member.getAddress().equals("Guangxi")) {%> selected
+												<%}%>>Guangxi</option>
+											<option value="Guizhou"
+												<%if (member.getAddress().equals("Guizhou")) {%> selected
+												<%}%>>Guizhou</option>
+											<option value="Hainan"
+												<%if (member.getAddress().equals("Hainan")) {%> selected
+												<%}%>>Hainan</option>
+											<option value="Hebei"
+												<%if (member.getAddress().equals("Hebei")) {%> selected
+												<%}%>>Hebei</option>
+											<option value="Henan"
+												<%if (member.getAddress().equals("Henan")) {%> selected
+												<%}%>>Henan</option>
+											<option value="Heilongjiang"
+												<%if (member.getAddress().equals("Heilongjiang")) {%>
+												selected <%}%>>Heilongjiang</option>
+											<option value="Hubei"
+												<%if (member.getAddress().equals("Hubei")) {%> selected
+												<%}%>>Hubei</option>
+											<option value="Hunan"
+												<%if (member.getAddress().equals("Hunan")) {%> selected
+												<%}%>>Hunan</option>
+											<option value="Jilin"
+												<%if (member.getAddress().equals("Jilin")) {%> selected
+												<%}%>>Jilin</option>
+											<option value="Jiangsu"
+												<%if (member.getAddress().equals("Jiangsu")) {%> selected
+												<%}%>>Jiangsu</option>
+											<option value="Jiangxi"
+												<%if (member.getAddress().equals("Jiangxi")) {%> selected
+												<%}%>>Jiangxi</option>
+											<option value="Liaoning"
+												<%if (member.getAddress().equals("Liaoning")) {%> selected
+												<%}%>>Liaoning</option>
+											<option value="Neimenggu"
+												<%if (member.getAddress().equals("Neimenggu")) {%> selected
+												<%}%>>Neimenggu</option>
+											<option value="Ningxia"
+												<%if (member.getAddress().equals("Ningxia")) {%> selected
+												<%}%>>Ningxia</option>
+											<option value="Qinghai"
+												<%if (member.getAddress().equals("Qinghai")) {%> selected
+												<%}%>>Qinghai</option>
+											<option value="Shandong"
+												<%if (member.getAddress().equals("Shandong")) {%> selected
+												<%}%>>Shandong</option>
+											<option value="Shan(-)xi"
+												<%if (member.getAddress().equals("Shan(-)xi")) {%> selected
+												<%}%>>Shan(-)xi</option>
+											<option value="Shan(√)xi"
+												<%if (member.getAddress().equals("Shan(√)xi")) {%> selected
+												<%}%>>Shan(√)xi</option>
+											<option value="Shanghai"
+												<%if (member.getAddress().equals("Shanghai")) {%> selected
+												<%}%>>Shanghai</option>
+											<option value="Sichuan"
+												<%if (member.getAddress().equals("Sichuan")) {%> selected
+												<%}%>>Sichuan</option>
+											<option value="Taiwan"
+												<%if (member.getAddress().equals("Taiwan")) {%> selected
+												<%}%>>Taiwan</option>
+											<option value="Tianjin"
+												<%if (member.getAddress().equals("Tianjin")) {%> selected
+												<%}%>>Tianjin</option>
+											<option value="Xizang"
+												<%if (member.getAddress().equals("Xizang")) {%> selected
+												<%}%>>Xizang</option>
+											<option value="Xianggang"
+												<%if (member.getAddress().equals("Xianggang")) {%> selected
+												<%}%>>Xianggang</option>
+											<option value="Xinjiang"
+												<%if (member.getAddress().equals("Xinjiang")) {%> selected
+												<%}%>>Xinjiang</option>
+											<option value="Yunnan"
+												<%if (member.getAddress().equals("Yunnan")) {%> selected
+												<%}%>>Yunnan</option>
+											<option value="Zhejiang"
+												<%if (member.getAddress().equals("Zhejiang")) {%> selected
+												<%}%>>Zhejiang</option>
+									</select> </label> <label><span class="text-form1"><strong>Birthday</strong></span><input
 										type="text" value="<%=member.getBirthday()%>" name="birthday"
 										onClick="WdatePicker()"></label>
 								</fieldset>

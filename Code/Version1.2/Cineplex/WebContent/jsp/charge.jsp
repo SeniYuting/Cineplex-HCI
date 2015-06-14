@@ -75,8 +75,8 @@
 			<div class="main">
 				<div class="sub-page-banner record-banner">
 					<p>
-						<strong class="font-1">Use</strong><strong class="font-2">Infos</strong><strong
-							class="font-1">to check and</strong><strong class="font-2">modify!</strong>
+						<strong class="font-1">Use</strong><strong class="font-2">Charge</strong><strong
+							class="font-1">to charge</strong><strong class="font-2">account!</strong>
 					</p>
 				</div>
 			</div>
@@ -92,11 +92,11 @@
 							<h2>Charge</h2>
 							<div id="form">
 								<fieldset>
-									<label><span class="text-form"><strong>BankCard</strong></span><input
+									<label><span class="text-form1"><strong>BankCard</strong></span><input
 										type="text" name="number" required></label> <label><span
-										class="text-form"><strong>Password</strong></span><input
+										class="text-form1"><strong>Password</strong></span><input
 										type="password" name="password" required></label> <label><span
-										class="text-form"><strong>Fee</strong></span> <select
+										class="text-form1"><strong>Fee</strong></span> <select
 										name="fee" id="select2">
 											<option value="50">50</option>
 											<option value="100">100</option>

@@ -654,7 +654,9 @@ time {
 
 .text-form1 {
 	float: left;
-	width: 141px;
+	width: 104px;
+	text-align: right;
+	margin-right: 18px;
 }
 
 .center {
@@ -768,15 +770,6 @@ dl dd a:hover {
 	overflow: hidden;
 	display: block;
 	min-height: 40px;
-}
-
-#form label strong {
-	font-weight: normal;
-	color: #1e1e1e;
-	float: left;
-	display: inline-block;
-	width: 80px;
-	padding-top: 2px;
 }
 
 #form1 {
