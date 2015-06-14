@@ -45,7 +45,7 @@
 				<%@include file="header.jsp"%>
 				<nav>
 					<ul class="right">
-						<li>Welcome <a href="infoPro?modify=1&charge=1"><%=memberName%></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+						<li>Welcome <a href="infoPro?modify=1"><%=memberName%></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
 							href="logoutPro">Logout</a></li>
 					</ul>
 					<ul class="menu">
@@ -53,7 +53,7 @@
 						<li><a href="allMoviesPro">Tickets</a></li>
 						<li><a href="activityArrangePro">Activities</a></li>
 						<li class="current"><a href="recordPro">Records</a></li>
-						<li><a href="infoPro?modify=1&charge=1">Infos</a></li>
+						<li><a href="charge.jsp">Charge</a></li>
 						<li><a href="about.jsp">About</a></li>
 					</ul>
 				</nav>
@@ -61,7 +61,7 @@
 		</header>
 		<section id="header-content">
 			<div class="main">
-				<div class="sub-page-banner record-banner">
+				<div class="sub-page-banner activity-banner">
 					<p>
 						<strong class="font-1">Use</strong><strong class="font-2">Records</strong><strong
 							class="font-1">to</strong><strong class="font-2">check!</strong>
@@ -170,7 +170,7 @@
 						%>
 					</tbody>
 				</table>
-				<a href="infoPro?modify=1&charge=2"><input type="button"
+				<a href="charge.jsp"><input type="button"
 					class="button-2-right1" value="Charge" /></a>
 				<%
 					} else {

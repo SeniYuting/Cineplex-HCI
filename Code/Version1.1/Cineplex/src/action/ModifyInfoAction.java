@@ -84,7 +84,7 @@ public class ModifyInfoAction extends BaseAction {
 
 		if (!password1.equals(password2)) {
 			out.print("<script>alert('Password Disagree!')</script>");
-			out.print("<script>window.location.href='infoPro?modify=2&charge=1'</script>");
+			out.print("<script>window.location.href='infoPro?modify=2'</script>");
 		} else {
 			if (icon != null) {
 				member.setIcon("../db/images/" + icon);
@@ -96,7 +96,7 @@ public class ModifyInfoAction extends BaseAction {
 
 			memberService.updateMember(member);
 			out.print("<script>alert('Modify Successfully!')</script>");
-			out.print("<script>window.location.href='infoPro?modify=1&charge=1'</script>");
+			out.print("<script>window.location.href='infoPro?modify=1'</script>");
 		}
 
 		out.flush();

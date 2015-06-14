@@ -122,18 +122,18 @@ public class ChargeAction extends BaseAction {
 					memberService.updateMember(member);
 
 					out.print("<script>alert('Charge Successfully!')</script>");
-					out.print("<script>window.location.href='infoPro?modify=1&charge=1'</script>");
+					out.print("<script>window.location.href='infoPro?modify=1'</script>");
 
 				} else {
 					out.print("<script>alert('Insufficient Balance!')</script>");
-					out.print("<script>window.location.href='infoPro?modify=1&charge=2'</script>");
+					out.print("<script>window.location.href='charge.jsp'</script>");
 				}
 			} else {
 				out.print("<script>alert('Card Number or Password Error!')</script>");
-				out.print("<script>window.location.href='infoPro?modify=1&charge=2'</script>");
+				out.print("<script>window.location.href='charge.jsp'</script>");
 			}
 		} else {
-			out.print("<script>window.location.href='infoPro?modify=1&charge=1'</script>");
+			out.print("<script>window.location.href='infoPro?modify=1'</script>");
 		}
 
 		out.flush();

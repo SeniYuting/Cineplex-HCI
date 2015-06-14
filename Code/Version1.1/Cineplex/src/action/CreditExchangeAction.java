@@ -36,7 +36,7 @@ public class CreditExchangeAction extends BaseAction {
 		} else {
 			out.print("<script>alert('Credit is Less than 10!')</script>");
 		}
-		out.print("<script>window.location.href='infoPro?modify=1&charge=1'</script>");
+		out.print("<script>window.location.href='infoPro?modify=1'</script>");
 
 		out.flush();
 		out.close();

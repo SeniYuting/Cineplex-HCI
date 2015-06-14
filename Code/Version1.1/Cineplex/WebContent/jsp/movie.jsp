@@ -44,7 +44,7 @@
 				<%@include file="header.jsp"%>
 				<nav>
 					<ul class="right">
-						<li>Welcome <a href="infoPro?modify=1&charge=1"><%=memberName%></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+						<li>Welcome <a href="infoPro?modify=1"><%=memberName%></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
 							href="logoutPro">Logout</a></li>
 					</ul>
 					<ul class="menu">
@@ -52,7 +52,7 @@
 						<li class="current"><a href="allMoviesPro">Tickets</a></li>
 						<li><a href="activityArrangePro">Activities</a></li>
 						<li><a href="recordPro">Records</a></li>
-						<li><a href="infoPro?modify=1&charge=1">Infos</a></li>
+						<li><a href="charge.jsp">Charge</a></li>
 						<li><a href="about.jsp">About</a></li>
 					</ul>
 				</nav>
@@ -77,41 +77,6 @@
 						<%
 							Movie movie = (Movie) request.getAttribute("movie");
 						%>
-						<h2 class="h2">The Leading Role</h2>
-						<div class="wrap block-6">
-							<div class="img-indent-5">
-								<img src="<%=((String) movie.getStarpic()).split("&&")[0]%>"
-									alt="" class="left-2 img-radius"><img
-									src="<%=((String) movie.getStarpic()).split("&&")[1]%>" alt=""
-									class="img-radius">
-							</div>
-							<div class="extra-wrap">
-								<p class="color-1 p2">
-									Starring
-									<%=movie.getStar()%>.
-								</p>
-								<p><%=movie.getActorplot()%></p>
-
-								<form action="ticketBookPro?movie_id=<%=movie.getId()%>"
-									autocomplete="on" method="post">
-									<div class="top-1 left-3 font1 red1">
-										<label>Ticket Num&nbsp;&nbsp;&nbsp;&nbsp;</label> <select
-											name="number" id="select1">
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-										</select> <input type="submit" class="button-2-right1" value="Book" />
-									</div>
-								</form>
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="grid_12">
-					<div class="pad-1 wrap top-2">
 						<h2 class="h2"><%=movie.getName()%></h2>
 						<div class="wrap">
 							<img class="img-indent-4 img-radius" alt=""
@@ -136,6 +101,45 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="grid_12">
+					<div class="pad-1 wrap top-2">
+					
+					<h2 class="h2">The Leading Role</h2>
+						<div class="wrap block-6">
+							<div class="img-indent-5">
+								<img src="<%=((String) movie.getStarpic()).split("&&")[0]%>"
+									alt="" class="left-2 img-radius"><img
+									src="<%=((String) movie.getStarpic()).split("&&")[1]%>" alt=""
+									class="img-radius">
+							</div>
+							<div class="extra-wrap">
+								<p class="color-1 p2">
+									Starring
+									<%=movie.getStar()%>.
+								</p>
+								<p><%=movie.getActorplot()%></p>
+
+								
+
+							</div>
+							<form action="ticketBookPro?movie_id=<%=movie.getId()%>"
+									autocomplete="on" method="post">
+									<div class="top-1 left-3 font1 red1">
+										<label>Ticket Num&nbsp;&nbsp;&nbsp;&nbsp;</label> <select
+											name="number" id="select1">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select> <input type="submit" class="button-2-right1" value="Book" />
+									</div>
+								</form>
+						</div>
+					
+						
 					</div>
 				</div>
 				<div class="clear"></div>

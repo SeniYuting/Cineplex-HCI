@@ -59,7 +59,7 @@
 				<%@include file="header.jsp"%>
 				<nav>
 					<ul class="right">
-						<li>Welcome <a href="infoPro?modify=1&charge=1"><%=memberName%></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+						<li>Welcome <a href="infoPro?modify=1"><%=memberName%></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
 							href="logoutPro">Logout</a></li>
 					</ul>
 					<ul class="menu">
@@ -67,7 +67,7 @@
 						<li class="current"><a href="allMoviesPro">Tickets</a></li>
 						<li><a href="activityArrangePro">Activities</a></li>
 						<li><a href="recordPro">Records</a></li>
-						<li><a href="infoPro?modify=1&charge=1">Infos</a></li>
+						<li><a href="charge.jsp">Charge</a></li>
 						<li><a href="about.jsp">About</a></li>
 					</ul>
 				</nav>

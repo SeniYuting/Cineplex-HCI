@@ -75,7 +75,7 @@
 				<%@include file="header.jsp"%>
 				<nav>
 					<ul class="right">
-						<li>Welcome <a href="infoPro?modify=1&charge=1"><%=memberName%></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+						<li>Welcome <a href="infoPro?modify=1"><%=memberName%></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
 							href="logoutPro">Logout</a></li>
 					</ul>
 					<ul class="menu">
@@ -83,7 +83,7 @@
 						<li><a href="allMoviesPro">Tickets</a></li>
 						<li><a href="activityArrangePro">Activities</a></li>
 						<li><a href="recordPro">Records</a></li>
-						<li><a href="infoPro?modify=1&charge=1">Infos</a></li>
+						<li><a href="charge.jsp">Charge</a></li>
 						<li><a href="about.jsp">About</a></li>
 					</ul>
 				</nav>
@@ -109,7 +109,7 @@
 								</p>
 								<a href="activityArrangePro">Read More</a>
 							</div></li>
-						<li><img src="../images/record.png" alt="">
+						<li><img src="../images/activity.png" alt="">
 							<div class="banner">
 								<p>
 									<strong class="font-1">Click</strong><strong class="font-2">Records</strong><strong
@@ -117,13 +117,13 @@
 								</p>
 								<a href="recordPro">Read More</a>
 							</div></li>
-						<li><img src="../images/info.png" alt="">
+						<li><img src="../images/record.png" alt="">
 							<div class="banner">
 								<p>
-									<strong class="font-1">Click</strong><strong class="font-2">Infos</strong><strong
-										class="font-1">to check and</strong><strong class="font-2">modify!</strong>
+									<strong class="font-1">Click</strong><strong class="font-2">Charge</strong><strong
+										class="font-1">to charge</strong><strong class="font-2">account!</strong>
 								</p>
-								<a href="infoPro?modify=1&charge=1">Read More</a>
+								<a href="charge.jsp">Read More</a>
 							</div></li>
 					</ul>
 					<div class="pagination">
@@ -133,9 +133,9 @@
 							<li><a href="activityArrangePro"><img
 									src="../images/activity-small.png" alt=""></a></li>
 							<li><a href="recordPro"><img
+									src="../images/activity-small.png" alt=""></a></li>
+							<li><a href="infoPro?modify=1"><img
 									src="../images/record-small.png" alt=""></a></li>
-							<li><a href="infoPro?modify=1&charge=1"><img
-									src="../images/info-small.png" alt=""></a></li>
 						</ul>
 					</div>
 				</div>
@@ -149,32 +149,28 @@
 					<div class="block-1">
 
 						<h3>Activities</h3>
-						<p class="color-1">
-							This module shows you all the cineplex activities. You can answer
-							the questions here and earn credits if answer correctly.
-							Just try!
-						</p>
+						<p class="color-1">This module shows you all the cineplex
+							activities. You can answer the questions here and earn credits if
+							answer correctly. Just try!</p>
 						<a href="activityArrangePro" class="button">Activities</a>
 					</div>
 				</div>
 				<div class="grid_4">
 					<div class="block-1">
 						<h3>Records</h3>
-						<p class="color-1">
-							This module shows you all your consumption records and payment
-							records. Check them here. And maybe you need a consumption
-							planning.
-						</p>
+						<p class="color-1">This module shows you all your consumption
+							records and payment records. Check them here. And maybe you need
+							a consumption planning.</p>
 						<a href="recordPro" class="button">Records</a>
 					</div>
 				</div>
 				<div class="grid_4">
 					<div class="block-1">
-						<h3>Infos</h3>
-						<p class="color-1">This module shows you all your personal infos,
-							including your Member info and Register info. Check them here and
-							modify if necessary.</p>
-						<a href="infoPro?modify=1&charge=1" class="button">Infos</a>
+						<h3>Charge</h3>
+						<p class="color-1">This module can help you charge. And the
+							bankcard and password has been given. Check them here and modify
+							if necessary.</p>
+						<a href="charge.jsp" class="button">Charge</a>
 					</div>
 				</div>
 				<div class="grid_8">
@@ -182,11 +178,9 @@
 						<h2 class="h2">Welcome to Cineplex!</h2>
 						<p class="color-1 p2">This Cineplex was foundes by Seni in
 							2000. In 2010, the Cineplex adsorded Nanjing's No 2 theater.</p>
-						<p>
-							There are at least 5 Cineplex in Nanjing, with the number to grow
-							in the comming year. And you can learn more about the Cineplex here in the
-							About module.
-						</p>
+						<p>There are at least 5 Cineplex in Nanjing, with the number
+							to grow in the comming year. And you can learn more about the
+							Cineplex here in the About module.</p>
 						<div class="block-2 wrap">
 							<a href="allMoviesPro">Tickets Book</a>
 						</div>

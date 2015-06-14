@@ -31,7 +31,7 @@ public class CancelMemberAction extends BaseAction {
 		memberService.updateMember(member);
 
 		out.print("<script>alert('Cancel Successfully! If you want to Recover, Please goto the Cineplex!')</script>");
-		out.print("<script>window.location.href='infoPro?modify=1&charge=1'</script>");
+		out.print("<script>window.location.href='infoPro?modify=1'</script>");
 
 		out.flush();
 		out.close();

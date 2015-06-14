@@ -1,11 +1,12 @@
+<%@page import="model.Member"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
-<%@ taglib prefix="MyTag" uri="/WEB-INF/tlds/checkSession.tld"%>
 <%@ page import="com.opensymphony.xwork2.ActionContext"%>
+<%@ taglib prefix="MyTag" uri="/WEB-INF/tlds/checkSession.tld"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>About</title>
+<title>Info</title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" media="screen"
 	href="../css/reset.css">
@@ -21,6 +22,22 @@
 <script src="../js/Vegur-R_400.font.js"></script>
 <script src="../js/cufon-replace.js"></script>
 <script src="../js/FF-cash.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script>
+	function cancel() {
+		var result = confirm('Sure to Cancel Member?');
+		if (result) {
+			window.location.href = "cancelMemberPro";
+		}
+	}
+
+	function exchange() {
+		var result = confirm('10 Credits -> $1!, Sure to Exchange Credits?');
+		if (result) {
+			window.location.href = "creditExchangePro";
+		}
+	}
+</script>
 </head>
 <body>
 	<MyTag:checkSession test="${sessionScope.account_id == null}">
@@ -29,7 +46,6 @@
 		%>
 	</MyTag:checkSession>
 	<!--==============================header=================================-->
-
 	<%
 		String memberName = (String) ActionContext.getContext()
 				.getSession().get("memberName");
@@ -49,19 +65,18 @@
 						<li><a href="allMoviesPro">Tickets</a></li>
 						<li><a href="activityArrangePro">Activities</a></li>
 						<li><a href="recordPro">Records</a></li>
-						<li><a href="charge.jsp">Charge</a></li>
-						<li class="current"><a href="about.jsp">About</a></li>
+						<li class="current"><a href="charge.jsp">Charge</a></li>
+						<li><a href="about.jsp">About</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<section id="header-content">
 			<div class="main">
-				<div class="sub-page-banner about-banner">
+				<div class="sub-page-banner record-banner">
 					<p>
-						<strong class="font-1">Use</strong><strong class="font-2">About</strong><strong
-							class="font-1">to</strong><strong class="font-2">learn
-							more!</strong>
+						<strong class="font-1">Use</strong><strong class="font-2">Infos</strong><strong
+							class="font-1">to check and</strong><strong class="font-2">modify!</strong>
 					</p>
 				</div>
 			</div>
@@ -70,44 +85,54 @@
 		<section id="content" class="border subpage-content">
 			<div class="ic"></div>
 			<div class="container_12">
-				<%@include file="amiddle.jsp"%>
-				<div class="grid_12">
-					<div class="pad-1 wrap top-1">
-						<h2>Basic Function</h2>
-						<div class="block-5 border-2">
-							<a href="allMoviesPro"><img src="../images/about-img1.png"
-								alt="" class="img-radius"></a>
-							<p>
-								<a href="allMoviesPro" class="link" target="_blank">Tickets</a>
-							</p>
-							<p>Book Tickets here.</p>
-						</div>
-						<div class="block-5 border-2">
-							<a href="activityArrangePro"><img
-								src="../images/about-img2.png" alt="" class="img-radius"></a>
-							<p>
-								<a href="activityArrangePro" class="link" target="_blank">Activities</a>
-							</p>
-							<p>Attend Activities here.</p>
-						</div>
-						<div class="block-5 border-2">
-							<a href="recordPro"><img src="../images/about-img2.png"
-								alt="" class="img-radius"></a>
-							<p>
-								<a href="recordPro" class="link" target="_blank">Records</a>
-							</p>
-							<p>Check Records here.</p>
-						</div>
-						<div>
-							<a href="charge.jsp"><img src="../images/about-img4.png"
-								alt="" class="img-radius"></a>
-							<p>
-								<a href="charge.jsp" class="link" target="_blank">Charge</a>
-							</p>
-							<p>Charge your account here. And at least $200 to valid.</p>
+				<form action="chargePro" autocomplete="on" method="post">
+
+					<div class="grid_8">
+						<div class="pad-1">
+							<h2>Charge</h2>
+							<div id="form">
+								<fieldset>
+									<label><span class="text-form"><strong>BankCard</strong></span><input
+										type="text" name="number" required></label> <label><span
+										class="text-form"><strong>Password</strong></span><input
+										type="password" name="password" required></label> <label><span
+										class="text-form"><strong>Fee</strong></span> <select
+										name="fee" id="select2">
+											<option value="50">50</option>
+											<option value="100">100</option>
+											<option value="200">200</option>
+											<option value="300">300</option>
+											<option value="400">400</option>
+											<option value="500">500</option>
+									</select> </label>
+
+								</fieldset>
+							</div>
+							<input type="submit" class="button-2-right1" value="Submit" />
 						</div>
 					</div>
+
+				</form>
+
+				<div class="grid_4">
+					<div class="pad-1">
+						<h2 class="h2">Charge Notice</h2>
+						<div class="center">
+							<img src="../images/webmoney.png" alt="" class="img-indent">
+						</div>
+						<dl>
+							<dd>
+								<span class="red1 font1">Activate:</span>&nbsp;&nbsp;Payment of
+								over &nbsp;&nbsp;&nbsp;<label class="red1 font1">$200</label>
+							</dd>
+							<dd>
+								<span>Way:</span>&nbsp;&nbsp;Pay by bank card
+							</dd>
+						</dl>
+					</div>
 				</div>
+
+
 				<div class="clear"></div>
 			</div>
 		</section>

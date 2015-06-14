@@ -109,7 +109,13 @@ public class TicketBookAction extends BaseAction {
 					}
 				} else {
 					// ��δ����
-					out.print("<script>alert('Error! Card is Invalid! You must hava > $ 200 to be valid!')</script>");
+					out.print("<script>confirm('Error! Card is Invalid! You must hava > $ 200 to be valid! Charge Now?')?window.location.href='charge.jsp':window.location.href='oneMoviePro?movie_name="
+							+ movie.getName() + "'</script>");
+
+					out.flush();
+					out.close();
+
+					return SUCCESS;
 				}
 			}
 		} else {
