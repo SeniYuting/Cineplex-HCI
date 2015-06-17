@@ -16,10 +16,10 @@
 		var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 		var emailNote = document.getElementById("emailNote");
 		if (!emailRegex.test(email)) {
-			emailNote.innerText = "Email Error";
+			emailNote.innerText = "Email Error!";
 			emailNote.style.color = "#FF0000";
 		} else {
-			emailNote.innerText = "Email Right";
+			emailNote.innerText = "Looks Good!";
 			emailNote.style.color = "#32CD32";
 		}
 	}
@@ -29,12 +29,39 @@
 		var confirmPw = document.getElementById("passwordsignup_confirm").value
 				.trim();
 		var confirmPwNote = document.getElementById("pwdNote");
-		if (confirmPw != password) {
-			confirmPwNote.innerText = "Password Disagree";
+		if (confirmPw == "") {
+			confirmPwNote.innerText = "Forget Password!";
+			confirmPwNote.style.color = "#FF0000";
+		} else if (confirmPw != password) {
+			confirmPwNote.innerText = "Password Disagree!";
 			confirmPwNote.style.color = "#FF0000";
 		} else {
-			confirmPwNote.innerText = "Password Agree";
+			confirmPwNote.innerText = "Password Agree!";
 			confirmPwNote.style.color = "#32CD32";
+		}
+	}
+	//用户名
+	function nameRight() {
+		var name = document.getElementById("usernamesignup").value.trim();
+		var confirmNameNote = document.getElementById("nameNote");
+		if (name == "") {
+			confirmNameNote.innerText = "Forget Name!";
+			confirmNameNote.style.color = "#FF0000";
+		} else {
+			confirmNameNote.innerText = "Nice to meet you!";
+			confirmNameNote.style.color = "#32CD32";
+		}
+	}
+	//密码
+	function pwRight() {
+		var password = document.getElementById("passwordsignup").value.trim();
+		var confirmPasswordNote = document.getElementById("pNote");
+		if (password == "") {
+			confirmPasswordNote.innerText = "Forget Password!";
+			confirmPasswordNote.style.color = "#FF0000";
+		} else {
+			confirmPasswordNote.innerText = "Good!";
+			confirmPasswordNote.style.color = "#32CD32";
 		}
 	}
 </script>
@@ -133,14 +160,16 @@
 									placeholder="e.g. mysupermail@mail.com" type="email" />
 							</p>
 							<p>
-								<label for="usernamesignup" class="uname" data-icon="u">Name</label>
-								<input id="usernamesignup" name="name" required type="text"
-									placeholder="e.g. mysuperusername690" />
+								<label for="usernamesignup" class="uname" data-icon="u">Name</label><label
+									style="margin-left: 20px;" id="nameNote"></label> <input
+									id="usernamesignup" name="name" required type="text"
+									placeholder="e.g. mysuperusername690" onblur="nameRight();" />
 							</p>
 							<p>
 								<label for="passwordsignup" class="youpasswd" data-icon="p">Password</label>
-								<input id="passwordsignup" name="password" required
-									type="password" placeholder="e.g. X8df!90EO" />
+								<label style="margin-left: 20px;" id="pNote"></label> <input
+									id="passwordsignup" name="password" required type="password"
+									placeholder="e.g. X8df!90EO" onblur="pwRight();" />
 							</p>
 							<p>
 								<label for="passwordsignup_confirm" class="youpasswd"
@@ -158,8 +187,9 @@
 									style="margin-left: 60px; margin-top: 15px;" />male
 							</p>
 							<p>
-								<label for="birthday">Birthday</label> <input type="text"
-									name="birthday" required onFocus="WdatePicker()"
+								<label for="birthday">Birthday</label><label
+									style="margin-left: 20px;" id="birthNote"></label> <input
+									type="text" name="birthday" required onFocus="WdatePicker()"
 									placeholder="e.g. 1970-01-01">
 							</p>
 							<p>

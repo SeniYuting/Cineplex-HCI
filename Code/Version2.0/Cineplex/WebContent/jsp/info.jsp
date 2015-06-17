@@ -152,7 +152,9 @@
 										type="text" value="<%=member.getBalance()%>"
 										readonly="readonly"></label> <label><span
 										class="text-form1"><strong>CardState</strong></span><input
-										type="text"
+										type="text" <%if (!member.getState()) {%>
+										style="color: #FF0000; font-size: 16px;" <%} else {%>
+										style="color: #32CD32; font-size: 16px;" <%}%>
 										value="<%if (member.getState()) {%>Valid<%} else {%>Invalid<%}%>"
 										readonly="readonly"></label> <label><span
 										class="text-form1"><strong>RegisterTime</strong></span><input
