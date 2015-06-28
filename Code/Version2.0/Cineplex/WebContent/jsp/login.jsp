@@ -153,6 +153,7 @@
 							%>
 							<p>
 								<label for="emailsignup" class="youmail" data-icon="e">Account(Email)</label><label
+									style="color: red; margin-left: 3px; font-weight: bold;">*</label><label
 									style="float: right;" id="emailNote"></label> <input
 									id="emailsignup" name="account" required
 									onblur="emailValidation();"
@@ -160,29 +161,33 @@
 							</p>
 							<p>
 								<label for="usernamesignup" class="uname" data-icon="u">Name</label><label
+									style="color: red; margin-left: 3px; font-weight: bold;">*</label><label
 									style="float: right;" id="nameNote"></label> <input
 									id="usernamesignup" name="name" required type="text"
 									placeholder="e.g. mysuperusername690" onblur="nameRight();" />
 							</p>
 							<p>
-								<label for="passwordsignup" class="youpasswd" data-icon="p">Password</label>
+								<label for="passwordsignup" class="youpasswd" data-icon="p">Password</label><label
+									style="color: red; margin-left: 3px; font-weight: bold;">*</label>
 								<label style="float: right;" id="pNote"></label> <input
 									id="passwordsignup" name="password" required type="password"
 									placeholder="e.g. X8df!90EO" onblur="pwRight();" />
 							</p>
 							<p>
 								<label for="passwordsignup_confirm" class="youpasswd"
-									data-icon="p">Password Again</label> <label
-									style="float: right;" id="pwdNote"></label><input
+									data-icon="p">Password Again</label><label
+									style="color: red; margin-left: 3px; font-weight: bold;">*</label>
+								<label style="float: right;" id="pwdNote"></label><input
 									id="passwordsignup_confirm" name="password2" required
 									type="password" placeholder="e.g. X8df!90EO"
 									onblur="confirmPwValidation();" />
 							</p>
 							<p>
-								<label>Gender</label> <br> <input type="radio"
-									name="gender" value="female" checked="checked"
-									style="margin-left: 60px; margin-top: 15px;" />female <input
-									type="radio" name="gender" value="male"
+								<label>Gender</label><label
+									style="color: red; margin-left: 3px; font-weight: bold;">*</label>
+								<br> <input type="radio" name="gender" value="female"
+									checked="checked" style="margin-left: 60px; margin-top: 15px;" />female
+								<input type="radio" name="gender" value="male"
 									style="margin-left: 60px; margin-top: 15px;" />male
 							</p>
 							<p>
