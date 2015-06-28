@@ -44,6 +44,7 @@
 				<nav>
 					<ul class="right">
 						<li>Welcome <a href="infoPro?modify=1"><%=memberName%></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+							href="infoPro?modify=1">My Account</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
 							href="logoutPro">Log out</a></li>
 					</ul>
 					<ul class="menu">
@@ -98,7 +99,7 @@
 						<div class="wrap block-6">
 							<div class="img-indent-3">
 								<img src="<%=activity.getPic()%>" alt=""
-									class="left-2 img-radius">
+									class="left-2 img-radius" height="200" width="180">
 							</div>
 							<div class="extra-wrap1">
 								<p class="p2"><%=activity.getIntroduction()%></p>

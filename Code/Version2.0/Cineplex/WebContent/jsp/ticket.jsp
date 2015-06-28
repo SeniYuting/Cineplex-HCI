@@ -60,6 +60,7 @@
 				<nav>
 					<ul class="right">
 						<li>Welcome <a href="infoPro?modify=1"><%=memberName%></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+							href="infoPro?modify=1">My Account</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
 							href="logoutPro">Log out</a></li>
 					</ul>
 					<ul class="menu">
@@ -121,7 +122,8 @@
 				<div class="grid_3">
 					<div class="block-7 top-3">
 						<a href="oneMoviePro?movie_name=<%=movie_name%>"><img
-							src="<%=movies.get(i).getPic()%>" alt="" class="img-radius"></a>
+							src="<%=movies.get(i).getPic()%>" alt="" class="img-radius"
+							height="200" width="180"></a>
 						<p class="color-1">
 							<a href="oneMoviePro?movie_name=<%=movie_name%>"
 								class="color-1 red1"><%=movies.get(i).getName()%></a>

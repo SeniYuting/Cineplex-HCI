@@ -58,6 +58,7 @@
 				<nav>
 					<ul class="right">
 						<li>Welcome <a href="infoPro?modify=1"><%=memberName%></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+							href="infoPro?modify=1">My Account</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
 							href="logoutPro">Log out</a></li>
 					</ul>
 					<ul class="menu">

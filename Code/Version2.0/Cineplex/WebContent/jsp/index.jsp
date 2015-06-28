@@ -76,6 +76,7 @@
 				<nav>
 					<ul class="right">
 						<li>Welcome <a href="infoPro?modify=1"><%=memberName%></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+							href="infoPro?modify=1">My Account</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
 							href="logoutPro">Log out</a></li>
 					</ul>
 					<ul class="menu">
@@ -145,37 +146,10 @@
 		<section id="content" class="border">
 			<div class="ic"></div>
 			<div class="container_12">
-				<div class="grid_4">
-					<div class="block-1">
-
-						<h3>Activities</h3>
-						<p class="color-1">This module shows you all the cineplex
-							activities. You can answer the questions here and earn credits if
-							answer correctly. Just try!</p>
-						<a href="activityArrangePro" class="button">Activities</a>
-					</div>
-				</div>
-				<div class="grid_4">
-					<div class="block-1">
-						<h3>Records</h3>
-						<p class="color-1">This module shows you all your consumption
-							records and payment records. Check them here. And maybe you need
-							a consumption planning.</p>
-						<a href="recordPro" class="button">Records</a>
-					</div>
-				</div>
-				<div class="grid_4">
-					<div class="block-1">
-						<h3>Charge</h3>
-						<p class="color-1">This module can help you charge. And the
-							bankcard and password has been given. Check them here and modify
-							if necessary.</p>
-						<a href="charge.jsp" class="button">Charge</a>
-					</div>
-				</div>
 				<div class="grid_8">
+
 					<div class="left-1 page1-col1">
-						<h2 class="h2">Welcome to Cineplex!</h2>
+						<h3 style="margin-top: 20px; margin-bottom: 20px;">Welcome!</h3>
 						<p class="color-1 p2">This Cineplex was foundes by Seni in
 							2000. In 2010, the Cineplex adsorded Nanjing's No 2 theater.</p>
 						<p>There are at least 5 Cineplex in Nanjing, with the number
@@ -193,7 +167,8 @@
 					</div>
 				</div>
 				<div class="grid_4">
-					<h2 class="left-1">Notice</h2>
+					<h3
+						style="margin-top: 20px; margin-bottom: 20px; margin-left: 10px;">Notice</h3>
 					<div class="tabs">
 						<ul class="nav">
 							<li class="selected"><a href="#tab-1">Latest</a></li>

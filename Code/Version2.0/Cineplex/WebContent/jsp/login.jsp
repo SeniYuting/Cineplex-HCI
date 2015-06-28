@@ -60,8 +60,7 @@
 			confirmPasswordNote.innerText = "Forget Password!";
 			confirmPasswordNote.style.color = "#FF0000";
 		} else {
-			confirmPasswordNote.innerText = "Good!";
-			confirmPasswordNote.style.color = "#32CD32";
+			confirmPasswordNote.innerText = "";
 		}
 	}
 </script>
@@ -154,27 +153,27 @@
 							%>
 							<p>
 								<label for="emailsignup" class="youmail" data-icon="e">Account(Email)</label><label
-									style="margin-left: 20px;" id="emailNote"></label> <input
+									style="float: right;" id="emailNote"></label> <input
 									id="emailsignup" name="account" required
 									onblur="emailValidation();"
 									placeholder="e.g. mysupermail@mail.com" type="email" />
 							</p>
 							<p>
 								<label for="usernamesignup" class="uname" data-icon="u">Name</label><label
-									style="margin-left: 20px;" id="nameNote"></label> <input
+									style="float: right;" id="nameNote"></label> <input
 									id="usernamesignup" name="name" required type="text"
 									placeholder="e.g. mysuperusername690" onblur="nameRight();" />
 							</p>
 							<p>
 								<label for="passwordsignup" class="youpasswd" data-icon="p">Password</label>
-								<label style="margin-left: 20px;" id="pNote"></label> <input
+								<label style="float: right;" id="pNote"></label> <input
 									id="passwordsignup" name="password" required type="password"
 									placeholder="e.g. X8df!90EO" onblur="pwRight();" />
 							</p>
 							<p>
 								<label for="passwordsignup_confirm" class="youpasswd"
 									data-icon="p">Password Again</label> <label
-									style="margin-left: 20px;" id="pwdNote"></label><input
+									style="float: right;" id="pwdNote"></label><input
 									id="passwordsignup_confirm" name="password2" required
 									type="password" placeholder="e.g. X8df!90EO"
 									onblur="confirmPwValidation();" />
@@ -188,7 +187,7 @@
 							</p>
 							<p>
 								<label for="birthday">Birthday</label><label
-									style="margin-left: 20px;" id="birthNote"></label> <input
+									style="float: right;" id="birthNote"></label> <input
 									type="text" name="birthday" required onFocus="WdatePicker()"
 									placeholder="e.g. 1970-01-01">
 							</p>

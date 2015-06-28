@@ -58,6 +58,7 @@
 				<nav>
 					<ul class="right red1">
 						<li>Welcome <a href="infoPro?modify=1"><%=memberName%></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+							href="infoPro?modify=1">My Account</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
 							href="logoutPro">Log out</a></li>
 					</ul>
 					<ul class="menu">
@@ -302,8 +303,6 @@
 							<h2 class="h2">Portrait</h2>
 							<div class="map">
 								<img src="<%=member.getIcon()%>" alt="" class="img-indent">
-								<span>Modify photo:</span><input type="file" id="icon"
-									name="icon" />
 							</div>
 						</div>
 					</div>
