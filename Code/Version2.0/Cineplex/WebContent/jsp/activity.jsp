@@ -112,9 +112,12 @@
 									<div>
 										<%
 											String answer = activity.getAnswer();
+																boolean hasAnswer = (answer.equals("")) ? false
+																		: true;
 										%>
 										<input type="radio" name="answer" value="a1"
-											<%if (answer.equals("a1")) {%> checked="checked" <%}%>><label><%=((String) activity.getOption())
+											<%if (answer.equals("a1") || (!hasAnswer)) {%>
+											checked="checked" <%}%>><label><%=((String) activity.getOption())
 										.split("&&")[0]%></label><input type="radio" name="answer" value="a2"
 											class="left-6" <%if (answer.equals("a2")) {%>
 											checked="checked" <%}%>><label><%=((String) activity.getOption())
