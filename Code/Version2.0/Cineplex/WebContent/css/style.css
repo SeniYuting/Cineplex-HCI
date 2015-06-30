@@ -411,6 +411,30 @@ ul.menu li a:hover, ul.menu li.current a {
 	margin: 30px 0 30px 0;
 }
 
+.big-image1 {
+	background: url(../images/big-image1.png) 0 0px no-repeat;
+}
+
+.big-image2 {
+	background: url(../images/big-image2.png) 0 0px no-repeat;
+}
+
+.big-image3 {
+	background: url(../images/big-image3.png) 0 0px no-repeat;
+}
+
+.big-image4 {
+	background: url(../images/big-image4.png) 0 0px no-repeat;
+}
+
+.big-image5 {
+	background: url(../images/big-image5.png) 0 0px no-repeat;
+}
+
+.big-image6 {
+	background: url(../images/big-image6.png) 0 0px no-repeat;
+}
+
 .ticket-banner {
 	background: url(../images/ticket-banner.png) 0 0px no-repeat;
 }

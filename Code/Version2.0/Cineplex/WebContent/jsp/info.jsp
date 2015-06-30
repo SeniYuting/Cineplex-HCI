@@ -74,7 +74,7 @@
 		</header>
 		<section id="header-content">
 			<div class="main">
-				<div class="sub-page-banner info-banner">
+				<div class="sub-page-banner big-image2">
 					<p>
 						<strong class="font-1">Use</strong><strong class="font-2">Info</strong><strong
 							class="font-1">to check and</strong><strong class="font-2">modify!</strong>

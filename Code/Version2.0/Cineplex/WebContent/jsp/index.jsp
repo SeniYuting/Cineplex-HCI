@@ -94,35 +94,35 @@
 			<div class="main">
 				<div class="slider">
 					<ul class="items">
-						<li><img src="../images/ticket.png" alt="">
+						<li><img src="../images/big-image3.png" alt="">
 							<div class="banner">
 								<p>
 									<strong class="font-1">Click</strong><strong class="font-2">Ticket</strong><strong
-										class="font-1">to pre-</strong><strong class="font-2">book!</strong>
+										class="font-1">to pre-book!</strong>
 								</p>
 								<a href="allMoviesPro">Read More</a>
 							</div></li>
-						<li><img src="../images/activity.png" alt="">
+						<li><img src="../images/big-image5.png" alt="">
 							<div class="banner">
 								<p>
 									<strong class="font-1">Click</strong><strong class="font-2">Activity</strong><strong
-										class="font-1">to</strong><strong class="font-2">attend!</strong>
+										class="font-1">to attend!</strong>
 								</p>
 								<a href="activityArrangePro">Read More</a>
 							</div></li>
-						<li><img src="../images/activity.png" alt="">
+						<li><img src="../images/big-image4.png" alt="">
 							<div class="banner">
 								<p>
 									<strong class="font-1">Click</strong><strong class="font-2">History</strong><strong
-										class="font-1">to check</strong><strong class="font-2">record!</strong>
+										class="font-1">to check record!</strong>
 								</p>
 								<a href="recordPro">Read More</a>
 							</div></li>
-						<li><img src="../images/record.png" alt="">
+						<li><img src="../images/big-image6.png" alt="">
 							<div class="banner">
 								<p>
 									<strong class="font-1">Click</strong><strong class="font-2">Charge</strong><strong
-										class="font-1">to charge</strong><strong class="font-2">account!</strong>
+										class="font-1">to charge account!</strong>
 								</p>
 								<a href="charge.jsp">Read More</a>
 							</div></li>
@@ -130,13 +130,13 @@
 					<div class="pagination">
 						<ul>
 							<li><a href="allMoviesPro"><img
-									src="../images/ticket-small.png" alt=""></a></li>
+									src="../images/small-image5.png" alt=""></a></li>
 							<li><a href="activityArrangePro"><img
-									src="../images/activity-small.png" alt=""></a></li>
+									src="../images/small-image2.png" alt=""></a></li>
 							<li><a href="recordPro"><img
-									src="../images/activity-small.png" alt=""></a></li>
+									src="../images/small-image1.png" alt=""></a></li>
 							<li><a href="infoPro?modify=1"><img
-									src="../images/record-small.png" alt=""></a></li>
+									src="../images/small-image7.png" alt=""></a></li>
 						</ul>
 					</div>
 				</div>

@@ -74,7 +74,7 @@
 		</header>
 		<section id="header-content">
 			<div class="main">
-				<div class="sub-page-banner record-banner">
+				<div class="sub-page-banner big-image6">
 					<p>
 						<strong class="font-1">Use</strong><strong class="font-2">Charge</strong><strong
 							class="font-1">to charge</strong><strong class="font-2">account!</strong>

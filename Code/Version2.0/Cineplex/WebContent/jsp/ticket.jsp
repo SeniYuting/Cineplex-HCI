@@ -76,7 +76,7 @@
 		</header>
 		<section id="header-content">
 			<div class="main">
-				<div class="sub-page-banner ticket-banner">
+				<div class="sub-page-banner big-image3">
 					<p>
 						<strong class="font-1">Use</strong><strong class="font-2">Ticket</strong><strong
 							class="font-1">to pre-</strong><strong class="font-2">book!</strong>

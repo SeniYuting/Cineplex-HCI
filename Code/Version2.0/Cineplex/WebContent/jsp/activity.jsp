@@ -60,7 +60,7 @@
 		</header>
 		<section id="header-content">
 			<div class="main">
-				<div class="sub-page-banner activity-banner">
+				<div class="sub-page-banner big-image5">
 					<p>
 						<strong class="font-1">Use</strong><strong class="font-2">Activity</strong><strong
 							class="font-1">to</strong><strong class="font-2">attend!</strong>

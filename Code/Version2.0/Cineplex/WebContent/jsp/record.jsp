@@ -62,7 +62,7 @@
 		</header>
 		<section id="header-content">
 			<div class="main">
-				<div class="sub-page-banner activity-banner">
+				<div class="sub-page-banner big-image4">
 					<p>
 						<strong class="font-1">Use</strong><strong class="font-2">History</strong><strong
 							class="font-1">to check</strong><strong class="font-2">record!</strong>

@@ -61,7 +61,7 @@
 		</header>
 		<section id="header-content">
 			<div class="main">
-				<div class="sub-page-banner ticket-banner">
+				<div class="sub-page-banner big-image3">
 					<p>
 						<strong class="font-1">Use</strong><strong class="font-2">Movie</strong><strong
 							class="font-1">to know</strong><strong class="font-2">more!</strong>

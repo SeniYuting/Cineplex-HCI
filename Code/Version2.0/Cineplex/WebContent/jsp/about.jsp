@@ -58,7 +58,7 @@
 		</header>
 		<section id="header-content">
 			<div class="main">
-				<div class="sub-page-banner about-banner">
+				<div class="sub-page-banner big-image1">
 					<p>
 						<strong class="font-1">Use</strong><strong class="font-2">About</strong><strong
 							class="font-1">to know</strong><strong class="font-2">
@@ -76,7 +76,7 @@
 					<div class="pad-1 wrap top-1">
 						<h2>Basic Function</h2>
 						<div class="block-5 border-2">
-							<a href="allMoviesPro"><img src="../images/about-img1.png"
+							<a href="allMoviesPro"><img src="../images/about-image1.png"
 								alt="" class="img-radius"></a>
 							<p>
 								<a href="allMoviesPro" class="link" target="_blank">Tickets</a>
@@ -85,14 +85,14 @@
 						</div>
 						<div class="block-5 border-2">
 							<a href="activityArrangePro"><img
-								src="../images/about-img2.png" alt="" class="img-radius"></a>
+								src="../images/about-image2.png" alt="" class="img-radius"></a>
 							<p>
 								<a href="activityArrangePro" class="link" target="_blank">Activities</a>
 							</p>
 							<p>Attend Activities here.</p>
 						</div>
 						<div class="block-5 border-2">
-							<a href="recordPro"><img src="../images/about-img2.png"
+							<a href="recordPro"><img src="../images/about-image3.png"
 								alt="" class="img-radius"></a>
 							<p>
 								<a href="recordPro" class="link" target="_blank">Records</a>
