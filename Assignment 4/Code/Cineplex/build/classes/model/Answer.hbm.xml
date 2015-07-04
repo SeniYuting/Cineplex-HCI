@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.Answer" table="answer">
+		<id name="id" type="int">
+			<column name="id" />
+			<generator class="assigned" />
+		</id>
+		<property name="question_id" type="int">
+			<column name="question_id" />
+		</property>
+		<property name="member_id" type="int">
+			<column name="member_id" />
+		</property>
+		<property name="answer" type="java.lang.String">
+			<column name="answer" />
+		</property>
+	</class>
+</hibernate-mapping>

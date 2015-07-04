@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.MoviePlan" table="movieplan">
+		<id name="id" type="int">
+			<column name="id" />
+			<generator class="assigned" />
+		</id>
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<property name="star" type="java.lang.String">
+			<column name="star" />
+		</property>
+		<property name="starpic" type="java.lang.String">
+			<column name="starpic" />
+		</property>
+		<property name="actorplot" type="java.lang.String">
+			<column name="actorplot" />
+		</property>
+		<property name="pic" type="java.lang.String">
+			<column name="pic" />
+		</property>
+		<property name="director" type="java.lang.String">
+			<column name="director" />
+		</property>
+		<property name="introduction" type="java.lang.String">
+			<column name="introduction" />
+		</property>
+		<property name="hall" type="int">
+			<column name="hall" />
+		</property>
+		<property name="seat" type="int">
+			<column name="seat" />
+		</property>
+		<property name="period" type="java.lang.String">
+			<column name="period" />
+		</property>
+		<property name="price" type="int">
+			<column name="price" />
+		</property>
+		<property name="language" type="java.lang.String">
+			<column name="language" />
+		</property>
+		<property name="writer" type="java.lang.String">
+			<column name="writer" />
+		</property>
+	</class>
+</hibernate-mapping>
